@@ -34,14 +34,14 @@ function callBinding(magicAnimals, updateAnimal, id) {
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-function applyBinding(magicAnimals, updateAnimal, id) {
+const applyBinding = function(magicAnimals, updateAnimal, id) {
   return updateAnimal.apply(
     magicAnimals.filter(val => {
       return val.id === id;
     }),
     ["being majestic", "eating rainbows"]
   );
-}
+};
 
 // *************
 // * PROBLEM 3 *
